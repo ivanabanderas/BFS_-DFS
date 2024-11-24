@@ -140,7 +140,7 @@ int main(){
     }
 
     auto startDFS = chrono::high_resolution_clock::now();
-    int indexDFS = bfsSearch(searchDNA);
+    int indexDFS = dfsSearch(searchDNA);
     auto endDFS = chrono::high_resolution_clock::now();
 
     double timeDFS = chrono::duration<double,milli>(endDFS - startDFS).count();
